@@ -17,5 +17,14 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return { greeting: 'Hello world in JSON' }
+  return { chave: 'Valor :)' }
 })
+
+Route.post('/user/register', 'UserController.register')
+Route.post('/user/authenticated', 'UserController.authenticated')
+
+Route.group(() => {
+  Route.resource('genre', 'GenreController').apiOnly()
+  Route.resource('movies', 'MovieController').apiOnly()
+  Route.resource('watched', 'WatchedController').apiOnly().except(['store', 'show', 'delet'])
+}).middleware('auth')
