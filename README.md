@@ -5,9 +5,9 @@ Curso de criação de Api Node utilizando o framework Adonis
 
 ## Comandos:
 
-- instalar cli adonis - npm i -g @adonisjs/cli
-- rodar projeto na pasta save-movie - adonis serve --dev
-- mostrar comandos - adonis --help
+- instalar adonis cli: npm i -g @adonisjs/cli
+- rodar projeto na pasta save-movie: adonis serve --dev
+- mostrar comandos: adonis --help
 
 ## Requisitos
 
